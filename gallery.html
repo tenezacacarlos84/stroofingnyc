@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LEM0LTQQ9X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LEM0LTQQ9X');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Gallery | ST Roofing & Construction LLC | NYC & NJ</title>
+  <meta name="description" content="Browse our project gallery — roofing, pavestone, skylights, waterproofing, and more across Bronx, New Rochelle, Throggs Neck, and NJ. See our quality work! Call (646) 399-5293">
+  <meta name="keywords" content="roofing projects NYC, construction gallery, before after roof, pavestone projects, skylight installation photos, Bronx roofing, NJ roofing">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://stroofing.com/gallery.html">
+  <meta property="og:title" content="Project Gallery | ST Roofing & Construction">
+  <meta property="og:description" content="See our completed roofing, pavestone, skylight, and construction projects across NYC and NJ.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stroofing.com/gallery.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Project Gallery - ST Roofing & Construction",
+    "description": "Portfolio of completed roofing, pavestone, skylight, and construction projects in NYC and NJ",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "ST Roofing & Construction LLC",
+      "telephone": "+1-646-399-5293"
+    }
+  }
+  </script>
+  <style>
+    .gallery-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    .gallery-filter {
+      padding: 0.5rem 1.25rem;
+      border: 2px solid var(--primary);
+      border-radius: 50px;
+      background: transparent;
+      color: var(--primary);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.9rem;
+    }
+    .gallery-filter:hover,
+    .gallery-filter.active {
+      background: var(--primary);
+      color: white;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+    .gallery-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    }
+    .gallery-card-image {
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+    }
+    .gallery-card-image i {
+      font-size: 3.5rem;
+      opacity: 0.9;
+    }
+    .gallery-card-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .gallery-card-body {
+      padding: 1.25rem;
+    }
+    .gallery-card-body h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+    }
+    .gallery-card-body p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.5;
+    }
+    .gallery-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+      color: var(--gray);
+    }
+    .gallery-card-meta i {
+      color: var(--accent);
+      margin-right: 4px;
+    }
+    @media (max-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <img src="images/logo-st-roofing.png" alt="ST Roofing & Construction LLC" class="logo-img">
+        </a>
+        <nav class="nav-desktop">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-cta">
+          <a href="tel:+16463995293" class="btn btn-accent"><i class="fas fa-phone-alt"></i> (646) 399-5293</a>
+        </div>
+        <button class="nav-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-overlay"></div>
+  <nav class="nav-mobile">
+    <button class="nav-close" aria-label="Close menu">&times;</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="mt-3">
+      <a href="tel:+16463995293" class="btn btn-accent btn-block"><i class="fas fa-phone-alt"></i> Call Now</a>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Project Gallery</h1>
+      <p>See our completed work across NYC, Westchester, and New Jersey</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">Our Work Speaks for Itself</h2>
+      <p class="text-center mt-2" style="max-width: 700px; margin-left: auto; margin-right: auto;">
+        Browse our portfolio of completed projects. From full roof replacements to custom pavestone patios, every project receives the same attention to detail and professional craftsmanship.
+      </p>
+
+      <div class="gallery-filters mt-4">
+        <button class="gallery-filter active" data-filter="all">All Projects</button>
+        <button class="gallery-filter" data-filter="roofing">Shingle Roofing</button>
+        <button class="gallery-filter" data-filter="flat-roof">Flat Roof</button>
+        <button class="gallery-filter" data-filter="chimney">Chimney</button>
+        <button class="gallery-filter" data-filter="gutters">Gutters</button>
+        <button class="gallery-filter" data-filter="insurance">Insurance Claims</button>
+      </div>
+
+      <div class="gallery-grid mt-4">
+
+        <!-- Shingle Roofing -->
+        <div class="gallery-card" data-category="roofing">
+          <div class="gallery-card-image" style="padding:0;height:220px;">
+            <img src="images/shingle-completed-01.jpg" alt="Shingle Roof Completed" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" data-lightbox="gallery" data-src="images/shingle-completed-01.jpg" data-caption="Shingle Roof Replacement — Bronx, NY">
+          </div>
+          <div class="gallery-card-body"><h3>Shingle Roof Replacement</h3><p>Full tear-off and new GAF architectural shingles installation.</p><div class="gallery-card-meta"><span><i class="fas fa-map-marker-alt"></i> Bronx, NY</span></div></div>
+        </div>
+
+        <div class="gallery-card" data-category="roofing">
+          <div class="gallery-card-image" style="padding:0;height:220px;">
+            <img src="images/shingle-completed-02.jpg" alt="Shingle Roof" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" data-lightbox="gallery" data-src="images/shingle-completed-02.jpg" data-caption="Shingle Roof — New Rochelle, NY">
+          </div>
+          <div class="gallery-card-body"><h3>Shingle Roof — New Rochelle</h3><p>Complete roof replacement with ridge vent and new underlayment.</p><div class="gallery-card-meta"><span><i class="fas fa-map-marker-alt"></i> New Rochelle, NY</span></div></div>
+        </div>
+
+        <div class="gallery-card" data-category="roofing">
+          <div class="gallery-card-image" style="padding:0;height:220px;">
+            <img src="images/shingle-completed-03.jpg" alt="Shingle Roof 3" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" data-lightbox="gallery" data-src="images/shingle-completed-03.jpg" data-caption="Shingle Roof Completed">
+          </div>
+          <div class="gallery-card-body"><h3>Shingle Roof with Gutters</h3><p>New shingle roof plus seamless black gutters installation.</p><div class="gallery-card-meta"><span><i class="fas fa-map-marker-alt"></i> Bronx, NY</span></div></div>
+        </div>
+
+        <div class="gallery-card" data-category="roofing">
+          <div class="gallery-card-image" style="padding:0;height:220px;">
+            <img src="images/shingle-roof-new-rochelle-completed.jpg" alt="New Rochelle Roof" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" data-lightbox="gallery" data-src="images/shingle-roof-new-rochelle-completed.jpg" data-caption="New Rochelle Roof — Completed">
+          </div>
+          <div class="gallery-card-body"><h3>New Rochelle Shingle Roof</h3><p>Aerial view of completed architectural shingle roof.</p><div class="gallery-card-meta"><span><i class="fas fa-map-marker-alt"></i> New Rochelle, NY</span></div></div>
+        </div>
+
+        <div class="gallery-card" data-category="roofing">
+          <div class="gallery-card-image" style="padding:0;height:220px;">
+            <img src="images/shingle-completed-aerial-01.jpg" alt="Aerial Shingle Roof" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" data-lightbox="gallery" data-src="images/shingle-completed-aerial-01.jpg" data-caption="Aerial View — Completed Shingle Roof">
+          </div>
+          <div class="gallery-card-body"><h3>Aerial — Shingle Roof</h3><p>Drone documentation of completed shingle roof project.</p><div class="gallery-card-meta"><span><i class="fas fa-map-marker-alt"></i> NYC Metro</span></div></div>
+        </div>
+
+        <!-- Flat Roof -->
+        <div class="gallery-card" data-category="flat-roof">
+          <div class="gallery-card-image" style="padding:0;height:220px;">
+            <img src="images/flat-roof-completed-seams.jpg" alt="Flat Roof Completed" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" data-lightbox="gallery" data-src="images/flat-roof-completed-seams.jpg" data-caption="Flat Roof — Torch Down Completed">
+          </div>
+          <div class="gallery-card-body"><h3>Flat Roof — Torch Down</h3><p>2-ply modified bitumen torch-down system. Watertight seams.</p><div class="gallery-card-meta"><span><i class="fas fa-map-marker-alt"></i> Bronx, NY</span></div></div>
+        </div>
+
+        <div class="gallery-card" data-category="flat-roof">
+          <div class="gallery-card-image" style="padding:0;height:220px;">
+            <img src="images/flat-roof-torch-down-crew-installing.jpg" alt="Flat Roof Installation" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" data-lightbox="gallery" data-src="images/flat-roof-torch-down-crew-installing.jpg" data-caption="Crew Installing Torch-Down Flat Roof">
+          </div>
+          <div class="gallery-card-body"><h3>Flat Roof Installation</h3><p>Crew installing torch-down membrane on commercial flat roof.</p><div class="gallery-card-meta"><span><i class="fas fa-map-marker-alt"></i> NYC</span></div></div>
+        </div>
+
+        <div class="gallery-card" data-category="flat-roof">
+          <div class="gallery-card-image" style="padding:0;height:220px;">
+            <img src="images/flat-roof-parapet-wall-flashing.jpg" alt="Parapet Flashing" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" data-lightbox="gallery" data-src="images/flat-roof-parapet-wall-flashing.jpg" data-caption="Parapet Wall Flashing — Flat Roof">
+          </div>
+          <div class="gallery-card-body"><h3>Parapet Wall Flashing</h3><p>Proper parapet wall flashing for complete waterproofing.</p><div class="gallery-card-meta"><span><i class="fas fa-map-marker-alt"></i> NYC</span></div></div>
+        </div>
+
+        <!-- Chimney -->
+        <div class="gallery-card" data-category="chimney">
+          <div class="gallery-card-image" style="padding:0;height:220px;">
+            <img src="images/chimney-after-new-rochelle.jpg" alt="Chimney After" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" data-lightbox="gallery" data-src="images/chimney-after-new-rochelle.jpg" data-caption="Chimney Repair — After — New Rochelle">
+          </div>
+          <div class="gallery-card-body"><h3>Chimney Repair — After</h3><p>Complete chimney restoration with new crown and flashing.</p><div class="gallery-card-meta"><span><i class="fas fa-map-marker-alt"></i> New Rochelle, NY</span></div></div>
+        </div>
+
+        <div class="gallery-card" data-category="chimney">
+          <div class="gallery-card-image" style="padding:0;height:220px;">
+            <img src="images/chimney-before-new-rochelle.jpg" alt="Chimney Before" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" data-lightbox="gallery" data-src="images/chimney-before-new-rochelle.jpg" data-caption="Chimney — Before — New Rochelle">
+          </div>
+          <div class="gallery-card-body"><h3>Chimney — Before</h3><p>Damaged chimney before repair. Cracked mortar and failing cap.</p><div class="gallery-card-meta"><span><i class="fas fa-map-marker-alt"></i> New Rochelle, NY</span></div></div>
+        </div>
+
+        <div class="gallery-card" data-category="chimney">
+          <div class="gallery-card-image" style="padding:0;height:220px;">
+            <img src="images/chimney-cap-install-new-rochelle.jpg" alt="Chimney Cap" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" data-lightbox="gallery" data-src="images/chimney-cap-install-new-rochelle.jpg" data-caption="Chimney Cap Installation — New Rochelle">
+          </div>
+          <div class="gallery-card-body"><h3>Chimney Cap Install</h3><p>New chimney caps installed to prevent water intrusion.</p><div class="gallery-card-meta"><span><i class="fas fa-map-marker-alt"></i> New Rochelle, NY</span></div></div>
+        </div>
+
+        <div class="gallery-card" data-category="chimney">
+          <div class="gallery-card-image" style="padding:0;height:220px;">
+            <img src="images/chimney-crown-flashing-closeup.jpg" alt="Chimney Crown Flashing" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" data-lightbox="gallery" data-src="images/chimney-crown-flashing-closeup.jpg" data-caption="Chimney Crown & Flashing Closeup">
+          </div>
+          <div class="gallery-card-body"><h3>Crown & Flashing</h3><p>New chimney crown and step flashing for watertight seal.</p><div class="gallery-card-meta"><span><i class="fas fa-map-marker-alt"></i> New Rochelle, NY</span></div></div>
+        </div>
+
+        <!-- Gutters -->
+        <div class="gallery-card" data-category="gutters">
+          <div class="gallery-card-image" style="padding:0;height:220px;">
+            <img src="images/shingle-gutters-black-01.jpg" alt="Black Gutters" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" data-lightbox="gallery" data-src="images/shingle-gutters-black-01.jpg" data-caption="Seamless Black Gutters Installation">
+          </div>
+          <div class="gallery-card-body"><h3>Seamless Black Gutters</h3><p>New seamless aluminum gutters in matte black finish.</p><div class="gallery-card-meta"><span><i class="fas fa-map-marker-alt"></i> Bronx, NY</span></div></div>
+        </div>
+
+        <div class="gallery-card" data-category="gutters">
+          <div class="gallery-card-image" style="padding:0;height:220px;">
+            <img src="images/shingle-gutters-black-02.jpg" alt="Black Gutters 2" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" data-lightbox="gallery" data-src="images/shingle-gutters-black-02.jpg" data-caption="Black Gutters with Downspouts">
+          </div>
+          <div class="gallery-card-body"><h3>Gutters with Downspouts</h3><p>Complete seamless gutter system with downspouts and guards.</p><div class="gallery-card-meta"><span><i class="fas fa-map-marker-alt"></i> NYC Metro</span></div></div>
+        </div>
+
+        <!-- Insurance -->
+        <div class="gallery-card" data-category="insurance">
+          <div class="gallery-card-image" style="padding:0;height:220px;">
+            <img src="images/insurance-claim-shingle-01.jpg" alt="Insurance Claim" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" data-lightbox="gallery" data-src="images/insurance-claim-shingle-01.jpg" data-caption="Storm Damage — Insurance Claim">
+          </div>
+          <div class="gallery-card-body"><h3>Storm Damage Repair</h3><p>Wind damage documentation for insurance claim. Full replacement approved.</p><div class="gallery-card-meta"><span><i class="fas fa-file-contract"></i> Insurance claim</span></div></div>
+        </div>
+
+        <div class="gallery-card" data-category="insurance">
+          <div class="gallery-card-image" style="padding:0;height:220px;">
+            <img src="images/insurance-claim-shingle-02.jpg" alt="Insurance Claim 2" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" data-lightbox="gallery" data-src="images/insurance-claim-shingle-02.jpg" data-caption="Roof Damage Documentation">
+          </div>
+          <div class="gallery-card-body"><h3>Damage Documentation</h3><p>Professional photo documentation for insurance adjuster.</p><div class="gallery-card-meta"><span><i class="fas fa-camera"></i> Documented</span></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container">
+      <h2>Like What You See?</h2>
+      <p>Let us bring the same quality craftsmanship to your project. Free estimates, no obligation.</p>
+      <div class="cta-buttons mt-3">
+        <a href="contact.html" class="btn btn-white btn-lg"><i class="fas fa-clipboard-check"></i> Get Free Estimate</a>
+        <a href="tel:+16463995293" class="btn btn-outline btn-lg" style="border-color: white; color: white;"><i class="fas fa-phone-alt"></i> Call Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/logo-st-roofing.png" alt="ST Roofing & Construction LLC" class="logo-img logo-img-footer">
+          </a>
+          <p>Your trusted roofing and construction professionals serving the NYC metro area since 2020.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="shingle-roof.html">Shingle Roofing</a></li>
+            <li><a href="flat-roof.html">Flat Roofs</a></li>
+            <li><a href="roof-repair.html">Roof Repair</a></li>
+            <li><a href="waterproofing.html">Waterproofing</a></li>
+            <li><a href="pavestone.html">Pavestone & Masonry</a></li>
+            <li><a href="skylight.html">Skylights</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Service Areas</h4>
+          <ul>
+            <li><a href="roofing-bronx.html">Bronx</a></li>
+            <li><a href="roofing-brooklyn.html">Brooklyn</a></li>
+            <li><a href="roofing-queens.html">Queens</a></li>
+            <li><a href="roofing-manhattan.html">Manhattan</a></li>
+            <li><a href="roofing-yonkers.html">Yonkers</a></li>
+            <li><a href="roofing-bergenfield-nj.html">Bergen County, NJ</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><i class="fas fa-phone-alt"></i> <a href="tel:+16463995293">(646) 399-5293</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:Stwaterprofing94@gmail.com">Stwaterprofing94@gmail.com</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> Bronx, NY</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ST Roofing &amp; Construction LLC. All rights reserved. | <a href="https://stroofingnyc.com/privacy.html">Privacy Policy</a></p>
+        <p class="mt-1">Licensed &amp; Insured | NY LIC 2119788-DCWP &nbsp;|&nbsp; <a href="https://maps.app.goo.gl/t1s4gMwdoeLZpXuJ7" target="_blank" rel="noopener"><i class="fab fa-google"></i> Google Business</a> &nbsp;|&nbsp; <a href="https://g.page/r/CfRT80kW-QsOEBE/review" target="_blank" rel="noopener"><i class="fas fa-star"></i> Leave a Review</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-floating-cta">
+    <a href="tel:+16463995293" class="btn btn-accent"><i class="fas fa-phone-alt"></i> Call Now</a>
+  </div>
+  
+  <script src="main.js"></script>
+  <script>
+    // Gallery filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filters = document.querySelectorAll('.gallery-filter');
+      const cards = document.querySelectorAll('.gallery-card');
+      
+      filters.forEach(function(filter) {
+        filter.addEventListener('click', function() {
+          // Update active state
+          filters.forEach(function(f) { f.classList.remove('active'); });
+          filter.classList.add('active');
+          
+          const category = filter.getAttribute('data-filter');
+          
+          cards.forEach(function(card) {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
