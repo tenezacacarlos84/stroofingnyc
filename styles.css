@@ -1465,3 +1465,47 @@ ul {
 @media (min-width: 768px) {
   .header-cta { display: flex !important; }
 }
+
+/* Contact and financing improvements */
+.form-honeypot { display: none; }
+.contact-alternative { margin-top: 1.25rem; line-height: 1.7; }
+.contact-alternative a, .form-disclaimer a, .finance-text-link { text-decoration: underline; text-underline-offset: 3px; }
+.finance-hero { background: linear-gradient(135deg, #1a365d, #2d4a7c); }
+.finance-eyebrow { font-size: .85rem; font-weight: 700; letter-spacing: .12em; margin-bottom: 1rem; }
+.finance-disclosure { font-size: .9rem; margin: 1.25rem auto 0; max-width: 680px; }
+.finance-text-link { display: inline-block; margin-top: .5rem; font-weight: 600; }
+.lead-popup-footer a { color: inherit; text-decoration: underline; }
+@media (min-width: 768px) and (max-width: 1099px) {
+  .nav-desktop { display: none; }
+  .nav-toggle { display: block; }
+}
+@media (min-width: 1100px) { .nav-desktop ul { gap: 18px; } }
+@media (max-width: 480px) {
+  .finance-hero .hero-buttons .btn { width: 100%; white-space: normal; }
+  .finance-disclosure { font-size: .85rem; }
+}
+
+.home-page .urgency-banner { margin-top: 100px; }
+.home-page .hero { padding-top: 60px; }
+/* Shared page headers sit below the fixed navigation. */
+.page-hero { padding: 155px 0 55px; color: #fff; text-align: center; }
+.page-hero h1 { color: #fff; margin-bottom: 1rem; }
+.page-hero-subtitle { max-width: 760px; margin: 0 auto 1.75rem; font-size: 1.15rem; line-height: 1.65; }
+.contact-form label { display: block; font-weight: 600; margin-bottom: .5rem; }
+.contact-form input:not([type="hidden"]):not(.form-honeypot), .contact-form select, .contact-form textarea {
+  width: 100%; min-height: 48px; padding: .85rem 1rem; border: 1px solid #a7b2be;
+  border-radius: 8px; font: inherit; font-size: 16px; background: #fff; color: #23364b;
+}
+.contact-form textarea { min-height: 150px; resize: vertical; }
+.contact-form :is(input, select, textarea):focus-visible { outline: 3px solid #1a5276; outline-offset: 2px; }
+.contact-form-wrapper, .contact-info-wrapper { min-width: 0; }
+.contact-info-card { padding: 1.5rem; border-radius: 12px; background: #f3f6f9; margin-bottom: 1.5rem; }
+.contact-info-item { display: flex; gap: 1rem; margin: 1.5rem 0; align-items: flex-start; }
+.contact-info-item .contact-icon { flex-shrink: 0; }
+.contact-info-item a { overflow-wrap: anywhere; }
+.content-block { max-width: 900px; margin-inline: auto; }
+.process-steps { display: grid; gap: 1.5rem; margin-top: 2.5rem; }
+.cta-box { padding: clamp(1.5rem, 4vw, 3rem); border-radius: 16px; background: #eef3f7; text-align: center; }
+.finance-hero + .section .cta-box { margin-top: 3rem; }
+.home-page .urgency-banner { background: #173c59; }
+@media (min-width: 900px) { .process-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); } }

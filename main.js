@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
   initFAQ();
   initStickyHeader();
   initScrollAnimations();
-  initForms();
   initSmoothScroll();
 });
 
@@ -136,47 +135,6 @@ function initScrollAnimations() {
   animateElements.forEach(function(el) {
     el.style.opacity = '0';
     observer.observe(el);
-  });
-}
-
-/**
- * Form Handling
- */
-function initForms() {
-  const forms = document.querySelectorAll('form[data-form]');
-  
-  forms.forEach(function(form) {
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      const submitBtn = form.querySelector('button[type="submit"]');
-      const originalText = submitBtn.textContent;
-      
-      // Show loading state
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-      
-      // Simulate form submission (replace with actual endpoint)
-      setTimeout(function() {
-        // Show success message
-        const successMsg = document.createElement('div');
-        successMsg.className = 'form-success';
-        successMsg.innerHTML = '<i class="fas fa-check-circle"></i> Thank you! We\'ll contact you within 24 hours.';
-        successMsg.style.cssText = 'background: #d4edda; color: #155724; padding: 15px; border-radius: 8px; margin-top: 20px; text-align: center;';
-        
-        form.appendChild(successMsg);
-        form.reset();
-        
-        // Reset button
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalText;
-        
-        // Remove success message after 5 seconds
-        setTimeout(function() {
-          successMsg.remove();
-        }, 5000);
-      }, 1500);
-    });
   });
 }
 
@@ -367,34 +325,25 @@ initLightbox();
  * Lead Capture Popup
  */
 function openLeadPopup() {
-  document.getElementById('lead-popup').classList.add('active');
+  const popup = document.getElementById('lead-popup');
+  if (!popup) return;
+  popup.classList.add('active');
   document.body.style.overflow = 'hidden';
 }
 function closeLeadPopup() {
-  document.getElementById('lead-popup').classList.remove('active');
+  const popup = document.getElementById('lead-popup');
+  if (!popup) return;
+  popup.classList.remove('active');
   document.body.style.overflow = '';
 }
 function submitLeadPopup(e) {
   e.preventDefault();
-  const form = document.getElementById('popup-form');
-  const name = form.name.value;
-  const phone = form.phone.value;
-  const service = form.service.value || 'Not specified';
-  // Send to WhatsApp
-  const msg = encodeURIComponent(`🏠 NEW LEAD from stroofingnyc.com\nName: ${name}\nPhone: ${phone}\nService: ${service}`);
-  window.open(`https://wa.me/16463995293?text=${msg}`, '_blank');
-  form.innerHTML = '<div style="padding:1.5rem 0;color:var(--primary);font-size:1.1rem;font-weight:700;"><i class="fas fa-check-circle" style="font-size:2rem;display:block;margin-bottom:0.5rem;"></i>Thank you! We\'ll call you within 1 hour.</div>';
-  setTimeout(closeLeadPopup, 3000);
-}
-
-// Show popup after 25 seconds (only once per session)
-if (!sessionStorage.getItem('popupShown')) {
-  setTimeout(function() {
-    if (!document.getElementById('lead-popup').classList.contains('active')) {
-      openLeadPopup();
-      sessionStorage.setItem('popupShown', '1');
-    }
-  }, 25000);
+  const form = e.currentTarget;
+  if (!form.reportValidity()) return;
+  const fields = new FormData(form);
+  const message = `Hello ST Roofing, I would like a roof inspection.\nName: ${fields.get('name')}\nPhone: ${fields.get('phone')}\nService: ${fields.get('service') || 'Not specified'}`;
+  // WhatsApp lets the visitor review and send; opening it is not a sent request.
+  window.location.assign('https://wa.me/13478580693?text=' + encodeURIComponent(message));
 }
 
 // Expose for buttons
