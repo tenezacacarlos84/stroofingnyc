@@ -712,14 +712,19 @@ ul {
 }
 
 .faq-question::after {
-  content: '+';
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
   font-size: 1.5rem;
   color: var(--primary);
   transition: var(--transition);
 }
 
 .faq-item.active .faq-question::after {
-  transform: rotate(45deg);
+  transform: rotate(135deg);
 }
 
 .faq-answer {
