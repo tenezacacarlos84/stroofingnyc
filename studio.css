@@ -238,3 +238,5 @@ a.unified-whatsapp{display:inline-flex;align-items:center;justify-content:center
 .pro-hero .studio-button{background:#c91f2b!important;color:#fff!important}
 
 .pro-hero .pro-outline{background:#c91f2b!important;border-color:#c91f2b!important;color:#fff!important}
+
+.st-social-links{grid-column:1/-1}.st-social-links a:focus-visible{outline:3px solid #ffd600;outline-offset:4px}
