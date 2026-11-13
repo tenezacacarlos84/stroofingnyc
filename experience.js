@@ -84,3 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// Social links for service pages using the shared footer.
+(()=>{const f=document.querySelector('footer');if(f&&!f.querySelector('.st-social-links')){const box=document.createElement('div');box.innerHTML="<nav class=\"st-social-links\" aria-label=\"Follow ST Roofing\" style=\"display:flex;gap:12px;flex-wrap:wrap;margin:20px 0\"><a style=\"color:#fff;background:#1765b5;padding:10px 14px;border-radius:8px\" href=\"https://www.facebook.com/stroofingConstruction\" target=\"_blank\" rel=\"noopener noreferrer\">Facebook ↗</a><a style=\"color:#fff;background:#a71955;padding:10px 14px;border-radius:8px\" href=\"https://www.instagram.com/stroofingconstructionllc/\" target=\"_blank\" rel=\"noopener noreferrer\">Instagram ↗</a><a style=\"color:#fff;background:#102b51;border:1px solid #8293a8;padding:10px 14px;border-radius:8px\" href=\"https://www.tiktok.com/@stroofingcontructionllc\" target=\"_blank\" rel=\"noopener noreferrer\">TikTok ↗</a></nav>";f.prepend(box.firstElementChild);}})();
